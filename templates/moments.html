@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>Игровые моменты</h2>
+
+<form method="POST">
+    <input type="text" name="command" placeholder="Введите вашу команду" required>
+    <button type="submit">Отправить</button>
+</form>
+
+<div class="gallery">
+    <div class="gallery-item">
+        <img src="{{ url_for('static', filename='images/1.jpg') }}" class="img-fluid" alt="Moment 1">
+    </div>
+    <div class="gallery-item">
+        <img src="{{ url_for('static', filename='images/2.png') }}" class="img-fluid" alt="Moment 2">
+    </div>
+    <div class="gallery-item">
+        <img src="{{ url_for('static', filename='images/3.jpg') }}" class="img-fluid" alt="Moment 3">
+    </div>
+    <div class="gallery-itemmd-4">
+        <img src="{{ url_for('static', filename='images/4.jpg') }}" class="img-fluid" alt="Moment 4">
+    </div>
+    <div class="gallery-item">
+        <img src="{{ url_for('static', filename='images/5.jpg') }}" class="img-fluid" alt="Moment 5">
+    </div>
+    <div class="gallery-item">
+        <img src="{{ url_for('static', filename='images/6.jpg') }}" class="img-fluid" alt="Moment 6">
+    </div>
+</div>
+{% endblock %}

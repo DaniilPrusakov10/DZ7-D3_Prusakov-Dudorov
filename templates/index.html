@@ -39,16 +39,17 @@
 </nav>
 
 <!-- Карусель -->
-<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="https://via.placeholder.com/1200x400?text=Слайд+1" class="d-block w-100" alt="...">
+            <img src="{{ url_for('static', filename='images/image4.png') }}" class="d-block w-100" alt="Слайд 4">
         </div>
         <div class="carousel-item">
-            <img src="https://via.placeholder.com/1200x400?text=Слайд+2" class="d-block w-100" alt="...">
+            <img src="{{ url_for('static', filename='images/image5.png') }}" class="d-block w-100" alt="Слайд 5">
         </div>
         <div class="carousel-item">
-            <img src="https://via.placeholder.com/1200x400?text=Слайд+3" class="d-block w-100" alt="...">
+            <img src="{{ url_for('static', filename='images/image6.png') }}" class="d-block w-100" alt="Слайд 6">
         </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -66,28 +67,28 @@
     <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
             <div class="card">
-                <img src="{{ url_for('static', filename='images/image1.png') }}" class="card-img-top" alt="...">
+                <img src="{{ url_for('static', filename='images/image1.png') }}" class="card-img-top" alt="Персонаж 1">
                 <div class="card-body">
-                    <h5 class="card-title">Карточка 1</h5>
-                    <p class="card-text">Описание карточки 1.</p>
+                    <h5 class="card-title">Геймер</h5>
+                    <p class="card-text">Современный персонаж с яркими волосами и очками виртуальной реальности.</p>
                 </div>
             </div>
         </div>
         <div class="col">
             <div class="card">
-                <img src="{{ url_for('static', filename='images/image2.png') }}" class="card-img-top" alt="...">
+                <img src="{{ url_for('static', filename='images/image2.png') }}" class="card-img-top" alt="Персонаж 2">
                 <div class="card-body">
-                    <h5 class="card-title">Карточка 2</h5>
-                    <p class="card-text">Описание карточки 2.</p>
+                    <h5 class="card-title">Киборг</h5>
+                    <p class="card-text">Футуристический персонаж с интегрированными технологическими улучшениями.</p>
                 </div>
             </div>
         </div>
         <div class="col">
             <div class="card">
-                <img src="{{ url_for('static', filename='images/image3.png') }}" class="card-img-top" alt="...">
+                <img src="{{ url_for('static', filename='images/image3.png') }}" class="card-img-top" alt="Персонаж 3">
                 <div class="card-body">
-                    <h5 class="card-title">Карточка 3</h5>
-                    <p class="card-text">Описание карточки 3.</p>
+                    <h5 class="card-title">Хакер</h5>
+                    <p class="card-text">Гений технологий, всегда на шаг впереди.</p>
                 </div>
             </div>
         </div>
